@@ -7,6 +7,183 @@
   pointer-events: none;
 }
 
+nav{
+  background-color: #e6dde5;
+  filter: drop-shadow( 2px 5px 8px #c0c0c0);
+  height: 50px;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a {
+  color: #6c5b7b;
+  text-decoration: none;
+}
+
+a:hover{
+  color: whitesmoke;
+}
+
+a{
+  text-decoration: none;
+}
+.background{
+  background-image: url("./images/greek-vase.png");
+}
+
+.background2{
+  background-color: #e6dde5;
+}
+
+.backgroundofBoxes{
+  background-color: #e6dde5;
+  filter: drop-shadow( 2px 5px 8px #c0c0c0);
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+
+.backgroundofBoxes2 {
+  background-image: url("./images/greek-vase.png");
+  padding-bottom: 20px;
+}
+.contactBox{
+  height: 100px;
+  width: 380px;
+  background-color: #9799ba;
+  border: 2px solid lightgrey;
+  filter: drop-shadow( 2px 5px 8px #c0c0c0);
+  border-radius: 10px;
+  display: inline-block;
+  margin: 35px;
+  color: dimgray;
+}
+
+.descripBox{
+  height: 100px;
+  width: 300px;
+  background-color: #e6dde5;
+  border: 1px solid #9799ba;
+  border-radius: 10px;
+  position: relative;
+  left: 50px;
+  padding: 10px;
+}
+
+button{
+  width: 145px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #9799ba;
+  filter: drop-shadow(2px 5px 8px rebeccapurple);
+  color: white;
+  text-decoration: none;
+  border: 5px solid #9799ba;
+
+
+}
+
+.button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  color: black;
+  background-color: #dcedc2;
+  border: 1px solid #cbe8ba;
+  filter: drop-shadow( 2px 5px 8px #dcedc2);
+}
+
+.button2{
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  color: lightgrey;
+  background-color: #6c5b7b;
+  border: 1px solid dimgray;
+  filter: drop-shadow( 2px 5px 8px dimgray);
+}
+
+
+.fontStyle{
+  font-size: 100px;
+  position:relative;
+  bottom: 45px;
+}
+.img{
+  height: 200px;
+  width: 230px;
+  border-radius: 10px;
+  border: 2px solid #9799ba;
+  margin: 25px;
+}
+
+.img2{
+  height: 300px;
+  width: 330px;
+  border-radius: 10px;
+  border: 2px solid #9799ba;
+  margin: 25px;
+}
+
+.img3{
+  height: 300px;
+  width: 330px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #9799ba;
+  margin: 25px;
+}
+
+.img4{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #9799ba;
+  margin: 25px;
+}
+
+.box{
+  width: 450px;
+  height: 300px;
+  filter: drop-shadow( 2px 5px 8px #c0c0c0);
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  background-color: white;
+  color: #c0c0c0;
+  position:relative;
+  left:730px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.box2{
+  width: 450px;
+  height: 100px;
+  filter: drop-shadow( 2px 5px 8px #c0c0c0);
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  background-color: white;
+  color: #c0c0c0;
+  position:relative;
+  left:730px;
+  margin-bottom: 50px;
+
+}
+
+.imgFooter{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 800px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

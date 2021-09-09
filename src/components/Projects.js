@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import havens from "../images/havens.PNG";
-import kaffa from "../images/kaffa.PNG";
+import hplace from "../images/hplace.PNG";
 import gem from "../images/stonestore.PNG";
 import webapp from "../images/webapp.PNG";
 
@@ -14,10 +14,10 @@ const projectList =[
         link: "https://havenscleaning999439214.wordpress.com/"
     },
     {
-        name:"Kaffa Coffee",
-        img: kaffa,
-        descrip: "WordPress website based on a coffee shop concept, looking to increase their online presence and attract customers",
-        link: "https://kaffacafecoffee.wordpress.com/"
+        name:"Heritage Place",
+        img: hplace,
+        descrip: "WordPress website for a center dedicated to helping senior citizens with technologies",
+        link: "https://heritageplaceindy.org/"
     },
     {
         name:"Gemstone Store",

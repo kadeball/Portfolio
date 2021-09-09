@@ -17,13 +17,6 @@ const linkList =[
         link: "/Skills"
     },
     {
-        name:"About Me",
-        img:"https://images.unsplash.com/photo-1595606694859-d7cbcbe5b412?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YnJhaW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        id: "3",
-        link: "/About"
-
-    },
-    {
         name:"Contact",
         img: "https://images.unsplash.com/photo-1559030623-0226b1241edd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbnRhY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         id: "4",

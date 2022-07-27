@@ -7,11 +7,35 @@
   pointer-events: none;
 }
 
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
 nav{
-  background-color: #e6dde5;
+  background-color: #8C63A7;
   filter: drop-shadow( 2px 5px 8px #c0c0c0);
   height: 50px;
   list-style-type: none;
+  margin-bottom: 5px;
 }
 
 nav li{
@@ -22,7 +46,7 @@ nav li{
 }
 
 li a {
-  color: #6c5b7b;
+  color: white;
   text-decoration: none;
 }
 
@@ -33,12 +57,10 @@ a:hover{
 a{
   text-decoration: none;
 }
-.background{
-  background-image: url("./images/greek-vase.png");
-}
 
-.background2{
-  background-color: #e6dde5;
+.background{
+  background-image: url("./images/triangle.png");
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .backgroundofBoxes{
@@ -52,6 +74,7 @@ a{
   background-image: url("./images/greek-vase.png");
   padding-bottom: 20px;
 }
+
 .contactBox{
   height: 100px;
   width: 380px;
@@ -75,25 +98,15 @@ a{
   padding: 10px;
 }
 
-button{
-  width: 145px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #9799ba;
-  filter: drop-shadow(2px 5px 8px rebeccapurple);
-  color: white;
-  text-decoration: none;
-  border: 5px solid #9799ba;
-}
-
 .button{
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
   border-radius: 10px;
   color: black;
-  background-color: #dcedc2;
-  border: 1px solid #cbe8ba;
-  filter: drop-shadow( 2px 5px 8px #dcedc2);
+  background-color: #8C63A7;
+  border: 1px solid #8C63A7;
+  position: relative;
+  top: 70px;
 }
 
 .button2{
@@ -108,10 +121,15 @@ button{
 
 
 .fontStyle{
-  font-size: 100px;
-  position:relative;
-  bottom: 45px;
+  font-size: 75px;
 }
+
+.fontStyle2{
+  font-size: 45px;
+  position: relative;
+  top: 25px;
+}
+
 .img{
   height: 200px;
   width: 230px;
@@ -147,32 +165,25 @@ button{
 }
 
 .box{
-  width: 450px;
-  height: 300px;
+  width: 550px;
+  height: 630px;
   filter: drop-shadow( 2px 5px 8px #c0c0c0);
-  border: 2px solid #c0c0c0;
+  border: 2px solid #C3BCE7;
   border-radius: 10px;
-  background-color: white;
-  color: #c0c0c0;
-  position:relative;
-  left:730px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  background-color: #C3BCE7;
+  color: black;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  margin-bottom: 198px;
 }
 
-.box2{
-  width: 450px;
-  height: 100px;
-  filter: drop-shadow( 2px 5px 8px #c0c0c0);
-  border: 2px solid #c0c0c0;
-  border-radius: 10px;
-  background-color: white;
-  color: #c0c0c0;
-  position:relative;
-  left:730px;
-  margin-bottom: 50px;
-
+.frame{
+  height: 852px;
+  width: 850px;
+  border-radius: 5px;
+  float: left;
+  display: inline-block;
 }
 
 .imgFooter{

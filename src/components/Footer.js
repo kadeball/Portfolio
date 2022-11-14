@@ -9,11 +9,9 @@ function Footer(){
 
     return(
         <nav>
-
             <li><a href="https://github.com/kadeball"><img className="imgFooter" src={github} alt="github"/></a></li>
             <li><a href="https://www.linkedin.com/in/kalista-ballard-3527491ab/"><img className="imgFooter" src={linkedin} alt="linkedin"/></a></li>
-            <li> <Link to="/Resume"><img className="imgFooter" src={resume} alt="resume"/></Link></li>
-
+            <li><Link to="/Resume"><img className="imgFooter" src={resume} alt="resume"/></Link></li>
         </nav>
 
 

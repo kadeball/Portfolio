@@ -17,7 +17,7 @@ const contactList =[
         link: "https://github.com/kadeball"
     },
     {
-        name:"Resume",
+        name:"View Resume",
         img:resume,
         link: "/Resume"
     },
@@ -35,9 +35,8 @@ function Contact(){
                 width: "380px",
                 padding: "10px",
                 borderRadius: "25px",
-                boxShadow: "2px 5px lightgray",
                 display: "inline-block",
-                backgroundColor: "#6c5b7b",
+                backgroundColor: "#C3BCE7",
                 marginBottom: "147px"
 
             };
@@ -46,8 +45,7 @@ function Contact(){
 
                 <div>
                     <img className="img3" src={contact.img} alt="image"/>
-                    <button> <a href={contact.link}> <h3>{contact.name}</h3></a></button>
-
+                    <button className="button3"><a href={contact.link}> <h3>{contact.name}</h3></a></button>
                 </div>
             </div>
 
@@ -57,7 +55,6 @@ function Contact(){
     }
 
     return(
-        <div className="background">
             <div className="backgroundofBoxes2">
                 <div>
             <h1 className="contactBox">Email: kalista8@outlook.com</h1>
@@ -66,7 +63,6 @@ function Contact(){
                 </div>
                 {renderContacts()}
             </div>
-        </div>
     )
 }
 

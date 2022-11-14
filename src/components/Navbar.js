@@ -6,9 +6,9 @@ function Navbar(){
 
     return(
         <nav>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/Projects">Projects</Link></li>
-            <li> <Link to="/Contact">Contact</Link></li>
+            <li className="hvr-underline-from-left"><Link to="/">Home</Link></li>
+            <li className="hvr-underline-from-left"><Link to="/Projects">Projects</Link></li>
+            <li className="hvr-underline-from-left"><Link to="/Contact">Contact</Link></li>
         </nav>
 
     )

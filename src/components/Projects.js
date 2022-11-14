@@ -4,14 +4,32 @@ import havens from "../images/havens.PNG";
 import hplace from "../images/hplace.PNG";
 import gem from "../images/stonestore.PNG";
 import webapp from "../images/webapp.PNG";
+import dw from "../images/dw.PNG";
+import abc from "../images/abc.PNG";
+import timbchamber from "../images/timbchamber.PNG";
+
+
+
 
 
 const projectList =[
     {
-        name:"Haven's Cleaning",
-        img: havens,
-        descrip: "WordPress website created for a small local business looking to create an online presence and attract more customers",
-        link: "https://havenscleaning999439214.wordpress.com/"
+        name:"Discount Warehouse",
+        img: dw,
+        descrip: "WordPress website created for a small local business looking to create expand their online presence in addition to their social media",
+        link: "https://discountwarehouseofwarsaw.com/"
+    },
+    {
+        name:"ABC Industries",
+        img: abc,
+        descrip: "Landing page created for a company to advertise their new heating products while their website is under construction",
+        link: "https://discountwarehouseofwarsaw.com/"
+    },
+    {
+        name:"Treasue Island and Madeira Beach Chamber of Commerce",
+        img: timbchamber,
+        descrip: "WordPress website created for to advertise events and their sponsors for a chamber of commerce is Florida",
+        link: "https://timbchamber.org/"
     },
     {
         name:"Heritage Place",
@@ -50,19 +68,15 @@ function Projects(){
                 borderRadius: "25px",
                 boxShadow: "2px 5px lightgray",
                 display: "inline-block",
-                backgroundColor: "#dcedc2",
+                backgroundColor: "white",
                 marginBottom: "115px"
-
             };
 
-            return<div className="background" style={styles}>
-
+            return<div style={styles}>
                 <div>
                     <img className="img2" src={projects.img} alt="image"/>
-                    <button className="button2"> <a href={projects.glink}> <p>Github Link</p></a></button>
                     <p className="descripBox">{projects.descrip}</p>
-                    <button className="button"> <a href={projects.link}> <h3>{projects.name}</h3></a></button>
-
+                    <button className="button3"><p><a href={projects.glink}>Source |</a><a href={projects.link}> Live</a></p></button>
                 </div>
             </div>
 
@@ -73,9 +87,8 @@ function Projects(){
 
 
     return(
-        <div className="background2">
-            <h1>Projects</h1>
-            <div className="backgroundofBoxes">
+        <div>
+            <div className="background">
             {renderProjects()}
             </div>
         </div>

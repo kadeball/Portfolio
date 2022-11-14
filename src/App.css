@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+/* Sweep To Bottom */
 .hvr-sweep-to-bottom {
   display: inline-block;
   vertical-align: middle;
@@ -19,7 +20,37 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #6c5b7b;
+  border: #6c5b7b;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
 
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: white;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Underline From Left */
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
@@ -29,13 +60,32 @@
   position: relative;
   overflow: hidden;
 }
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
 
 nav{
-  background-color: #8C63A7;
+  background-color: whitesmoke;
   filter: drop-shadow( 2px 5px 8px #c0c0c0);
   height: 50px;
   list-style-type: none;
-  margin-bottom: 5px;
+  padding: 5px;
 }
 
 nav li{
@@ -46,45 +96,49 @@ nav li{
 }
 
 li a {
-  color: white;
+  color: #6c5b7b;
   text-decoration: none;
 }
 
 a:hover{
-  color: whitesmoke;
+  color: #2098D1;
 }
 
 a{
   text-decoration: none;
+  color: white;
 }
 
-.background{
-  background-image: url("./images/triangle.png");
+.background {
+  background-image: url("./images/pleasework.jpg");
   font-family: Arial, Helvetica, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
 }
 
 .backgroundofBoxes{
   background-color: #e6dde5;
   filter: drop-shadow( 2px 5px 8px #c0c0c0);
-  margin-bottom: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 80px;
 }
 
 .backgroundofBoxes2 {
-  background-image: url("./images/greek-vase.png");
-  padding-bottom: 20px;
+  background-image: url("./images/triangle.png");
+  padding-bottom: 34px;
 }
 
 .contactBox{
   height: 100px;
   width: 380px;
-  background-color: #9799ba;
+  background-color: #8C63A7;
   border: 2px solid lightgrey;
   filter: drop-shadow( 2px 5px 8px #c0c0c0);
   border-radius: 10px;
   display: inline-block;
   margin: 35px;
-  color: dimgray;
+  color: white;
 }
 
 .descripBox{
@@ -103,22 +157,29 @@ a{
   height: 60px;
   border-radius: 10px;
   color: black;
-  background-color: #8C63A7;
-  border: 1px solid #8C63A7;
+  background-color: #C3BCE7;
+  border: 2px solid #6c5b7b;
   position: relative;
   top: 70px;
 }
 
 .button2{
-  width: 250px;
+  width: 280px;
   height: 35px;
   border-radius: 10px;
   color: lightgrey;
   background-color: #6c5b7b;
-  border: 1px solid dimgray;
-  filter: drop-shadow( 2px 5px 8px dimgray);
+  border: 1px solid #8C63A7;
 }
 
+.button3{
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  color: black;
+  background-color: #8C63A7;
+  border: 1px solid #8C63A7;
+}
 
 .fontStyle{
   font-size: 75px;
@@ -165,17 +226,17 @@ a{
 }
 
 .box{
-  width: 550px;
+  width: 570px;
   height: 630px;
-  filter: drop-shadow( 2px 5px 8px #c0c0c0);
-  border: 2px solid #C3BCE7;
+  filter: drop-shadow( 2px 5px 8px lightgray);
   border-radius: 10px;
-  background-color: #C3BCE7;
+  background-color: white;
   color: black;
   display: inline-block;
   position: relative;
   top: 100px;
-  margin-bottom: 198px;
+  right: 500px;
+  margin-bottom: 218px;
 }
 
 .frame{

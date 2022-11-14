@@ -28,7 +28,7 @@ const projectList =[
     {
         name:"Treasue Island and Madeira Beach Chamber of Commerce",
         img: timbchamber,
-        descrip: "WordPress website created for to advertise events and their sponsors for a chamber of commerce is Florida",
+        descrip: "WordPress website created for to advertise events and their sponsors for a chamber of commerce in Florida",
         link: "https://timbchamber.org/"
     },
     {
